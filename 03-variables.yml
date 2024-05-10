@@ -7,4 +7,10 @@
       ansible.builtin.debug:
         msg: URL - {{ URL }}
 
+    - name: Print Fruit Name
+      ansible.builtin.debug:
+        msg: Fruit - {{ FRUIT }}
+      vars:
+        FRUIT: apple
+
 

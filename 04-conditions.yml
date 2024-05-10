@@ -4,9 +4,11 @@
     - name: Welcome to DevOps Course
       ansible.builtin.debug:
         msg: Welcome to DevOps Course
+      when: course_name == "DevOps"
 
     - name: Welcome to AWS Course
       ansible.builtin.debug:
         msg: Welcome to AWS Course
+      when: course_name == "AWS"
 
 

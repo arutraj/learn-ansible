@@ -22,3 +22,18 @@
     - name: Print CLI Variable
       ansible.builtin.debug:
         msg: COURSE NAME - {{ COURSE_NAME }}
+
+    - name: List variable
+      ansible.builtin.debug:
+        msg: First Fruit Name - {{ FRUITS[0] }}
+      vars:
+        FRUITS:
+          - banana
+          - apple
+
+
+
+
+
+
+

@@ -2,6 +2,13 @@
   hosts: localhost
   vars:
     URL: play.example.com
+    STRING: Hello
+    NUMBER1: 1
+    NUMBER2: 3.2
+    BOOLEAN1: true
+    BOOLEAN2: false
+    BOOLEAN3: yes
+    BOOLEAN4: no
   vars_files:
     - vars.yml
   tasks:
@@ -38,6 +45,11 @@
         COURSE:
           name: DevOps
           trainer: John
+
+# You can access a variable with out quotes, However if the value is starting with variable then use double/single quotes
+# Variable not stating with value  Ex: msg: URL - {{ URL }}
+# Variable stating with value  Ex: msg: "{{ URL }}", In this case we need to quote it.
+
 
 
 

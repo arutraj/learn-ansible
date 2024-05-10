@@ -50,6 +50,14 @@
 # Variable not stating with value  Ex: msg: URL - {{ URL }}
 # Variable stating with value  Ex: msg: "{{ URL }}", In this case we need to quote it.
 
+    - name: Execute shell command
+      ansible.builtin.shell: uptime
+      register: OUT
+
+    - name: Print OUT
+      ansible.builtin.debug:
+        msg: "{{OUT}}"
+
 
 
 

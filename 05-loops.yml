@@ -10,7 +10,7 @@
     - name: Print Course
       ansible.builtin.debug:
         msg: Course Name - {{ item["course_name"]}} , Trainer Name - {{ item["trainer_name"]}}
-      when: item["course_name"] == "AWS"
+      #when: item["course_name"] == "AWS"
       loop:
         - { course_name: DevOps, trainer_name: Raju}
         - { course_name: AWS, trainer_name: Rahim}

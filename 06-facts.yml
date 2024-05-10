@@ -1,0 +1,7 @@
+- name: Setup Facts
+  hosts: localhost
+  tasks:
+    - name: Print ansible_architecture
+      ansible.builtin.debug:
+        msg: "{{ ansible_architecture }}"
+

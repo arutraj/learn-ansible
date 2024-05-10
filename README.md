@@ -9,6 +9,7 @@ Template
 Roles
 Manage Parallelism 
 Ansible Vault 
+Rescue 
 
 UI 
 
